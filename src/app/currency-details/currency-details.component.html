@@ -1,0 +1,20 @@
+<p style="font-size: large;">Foreign Exchange Rates for U.S. Dollar (USD)</p>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Currency Name</th>
+            <th>Code</th>
+            <th>Rate per 1 USD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of currencydetails">
+            <th>{{ item.currencyName }}</th>
+            <td>{{ item.currencyCode }}</td>
+            <td>{{ item.currencyUSDValue }}</td>
+        </tr>
+    </tbody>
+</table>
